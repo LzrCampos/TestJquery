@@ -32,7 +32,7 @@
     <script>
         $(document).ready(function () {
             $("#driver").click(function (event) {
-                $.get('http://localhost:5000/api/user/', function (data) {
+                $.get('https://lzrtestapi.azurewebsites.net/api/user', function (data) {
                     $.each(data, function (i, user) {
                         var item = "<li><b>Nome</b>: " + user.firstName + "</li><li><b>Sobrenome:</b> " + user.lastName + "</li><li><b>Idade:</b> " + user.age + "</li><br/>";
                         console.log(user)
