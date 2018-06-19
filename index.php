@@ -35,7 +35,6 @@
                 $.get('https://lzrtestapi.azurewebsites.net/api/user', function (data) {
                     $.each(data, function (i, user) {
                         var item = "<li><b>Nome</b>: " + user.firstName + "</li><li><b>Sobrenome:</b> " + user.lastName + "</li><li><b>Idade:</b> " + user.age + "</li><br/>";
-                        console.log(user)
                         $("#test").append(item);
                     });
                 });
